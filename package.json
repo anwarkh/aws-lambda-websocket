@@ -1,0 +1,19 @@
+{
+  "name": "@anwarkh/lambda-webcoket-typecsript-terraform",
+  "version": "0.0.1",
+  "description": "sample project for aws lambda with websocket ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "aws",
+    "lambda",
+    "serverless",
+    "typescript",
+    "terraform",
+    "websocket"
+  ],
+  "author": "Anouar KHARRAT",
+  "license": "MIT"
+}
