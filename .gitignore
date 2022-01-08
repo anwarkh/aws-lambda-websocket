@@ -6,3 +6,5 @@ lambda-webcoket-typecsript-terraform.iml
 dist/
 .terraform*
 *.terraform
+terraform.*
+.DS_Store
