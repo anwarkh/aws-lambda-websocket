@@ -1,11 +1,7 @@
-// Create a DocumentClient that represents the query to add an item
-import DynamoDB from 'aws-sdk/clients/dynamodb';
-import {AttributeNameList, ScanOutput} from "aws-sdk/clients/dynamodb";
-import {PromiseResult, Request} from "aws-sdk/lib/request";
-import {AWSError} from "aws-sdk/lib/error";
-import {DocumentClient} from "aws-sdk/lib/dynamodb/document_client";
 
-// Declare some custom client just to illustrate how TS will include only used files into lambda distribution
+import DynamoDB from 'aws-sdk/clients/dynamodb';
+import {AttributeNameList} from "aws-sdk/clients/dynamodb";
+
 export default class CustomDynamoClient {
     table: string;
     docClient: DynamoDB.DocumentClient;

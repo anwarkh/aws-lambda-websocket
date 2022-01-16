@@ -1,6 +1,5 @@
 locals {
-  name = "aws-websocket-example"
-  author = "anouar"
+  author = "anouar kharrat"
   email = "kharrat-anwar@hotmail.com"
   lambda_memory = 128
 

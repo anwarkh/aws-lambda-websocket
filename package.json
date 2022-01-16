@@ -4,6 +4,13 @@
   "description": "sample project for aws lambda with websocket ",
   "scripts": {
     "build": "rm -rf dist/ && tsc",
+    "clean": "npm run tf:destroy && rm -rf dist",
+    "build:deploy": "npm run build && npm run zip && npm run tf:init && npm run tf:apply",
+    "zip": "cd dist; bestzip connectionFunction.zip connectionFunction",
+    "tf:init": "cd terraform; terraform init",
+    "tf:plan": "cd terraform; terraform plan",
+    "tf:apply": "cd terraform; terraform apply",
+    "tf:destroy": "cd terraform; terraform destroy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
@@ -12,6 +19,7 @@
     "@types/node": "^14.14.37",
     "@typescript-eslint/eslint-plugin": "^4.22.1",
     "@typescript-eslint/parser": "^4.22.1",
+    "bestzip": "^2.2.0",
     "chai": "^4.3.4",
     "eslint": "^7.26.0",
     "mocha": "^8.4.0",

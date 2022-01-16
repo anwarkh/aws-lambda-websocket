@@ -33,7 +33,7 @@ resource "aws_apigatewayv2_integration" "ConnectIntegration" {
   api_id             = aws_apigatewayv2_api.aws-websocket-example-apg.id
   integration_type   = "AWS_PROXY"
   description        = "Connect Integration"
-  integration_uri    = aws_lambda_function.OnConnectFunction.invoke_arn
+  integration_uri    = aws_lambda_function.connectionFunction.invoke_arn
 }
 
 resource "aws_apigatewayv2_route" "ConnectRoute" {
