@@ -2,7 +2,7 @@ node_modules
 .env
 *.env
 *.idea
-.idea*
+.idea/*
 lambda-webcoket-typecsript-terraform.iml
 dist/
 .terraform*
